@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .login-box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        a.button {
+            display: inline-block;
+            background-color: #0077b5;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        a.button:hover {
+            background-color: #005a8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>Login Page</h1>
+        <p>Welcome to our secure login portal.</p>
+        <a class="button" href="{% url 'salesforce_oauth_login' %}">Login with Salesforce</a>
+    </div>
+</body>
+</html>
+
